@@ -39,8 +39,8 @@ img = cv.imread('photos/image.png')
 # flip = cv.flip(img, -1)
 # cv.imshow('flipped', flip)
 
-# cropping
-cropped = img[200:400 , 300:400]
-cv.imshow('crop', cropped)
+# # cropping
+# cropped = img[200:400 , 300:400]
+# cv.imshow('crop', cropped)
 
 cv.waitKey(0)

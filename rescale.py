@@ -1,17 +1,23 @@
-import cv2 as cv
+# import cv2 as cv
 
-image = cv.imread('photos/image.png')
-def rescaleFrame(frame, scale=0.75):
-    width = int(frame.shape[1]*scale)
-    height = int(frame.shape[0]*scale)
-    dim = (width, height)
+# image = cv.imread('photos/image.png')
 
-    return cv.resize(frame,dim, interpolation= cv.INTER_AREA)
+# def rescaleFrame(frame, scale=0.75):
+#     width = int(frame.shape[1]*scale)
+#     height = int(frame.shape[0]*scale)
+#     dim = (width, height)
 
-resized_img = rescaleFrame(image)
-cv.imshow('img',resized_img)
+#     return cv.resize(frame,dim, interpolation= cv.INTER_AREA)
+# # for live video
+# def changeRes(width,height):
+#     capture.set(3,width)
+#     capture.set(4,height)
 
-cv.waitKey(0)
+
+# resized_img = rescaleFrame(image)
+# cv.imshow('img',resized_img)
+
+# cv.waitKey(0)
 
 # capture = cv.VideoCapture('videos/puppy.webm')
 
